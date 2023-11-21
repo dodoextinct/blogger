@@ -1,0 +1,15 @@
+.heading2 {
+    margin-top: 150px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+  }
+
+  .heading3 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
