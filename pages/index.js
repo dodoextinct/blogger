@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
       <div>
         <nav className={styles.mainnav}>
           <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <li>About</li>
+            <Link href="/"><li>Home</li></Link>
+            <Link href="/blog"><li>Blog</li></Link>
+            <Link href="/contact"><li>Contact</li></Link>
+            <Link href="/about"><li>About</li></Link>
           </ul>
         </nav>
       </div>
