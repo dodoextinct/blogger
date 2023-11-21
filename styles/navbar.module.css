@@ -1,0 +1,18 @@
+.mainnav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mainnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .mainnav li {
+    float: left;
+    font-weight: bold;
+    margin: 10px;
+  }
