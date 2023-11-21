@@ -7,9 +7,15 @@
   }
 
   .heading3 {
-    display: flex;
     margin-top: 20px;
-    justify-content: center;
     cursor: pointer;
   }
 
+  .center {
+    justify-content: center;
+    display: flex;
+  }
+
+  .margin {
+    margin-top: 100px;
+  }

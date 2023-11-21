@@ -2,15 +2,15 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import styles from '../../styles/blogpost.module.css';
 
-const blogid= () => {
+const slug= () => {
     const router = useRouter();
     console.log(router.query);
-    const {blogid} = router.query || {};
+    const {slug} = router.query || {};
 
   return (
     <div>
       <div className={styles.title}>
-        <h2>Let us discuss {blogid}</h2>
+        <h2>Let us discuss {slug}</h2>
       </div>
       <hr className={styles.container}></hr>
       <div className={styles.container}>
@@ -23,4 +23,4 @@ If you're using the term in a metaphorical sense and want to avoid being seen as
   )
 }
 
-export default blogid;
+export default slug;
