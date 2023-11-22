@@ -3,15 +3,13 @@
     font-weight: bold;
     justify-content: center;
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .heading3 {
     margin-top: 20px;
     cursor: pointer;
-  }
-
-  .center {
+    align-items: start;
     justify-content: center;
     display: flex;
   }
@@ -19,3 +17,4 @@
   .margin {
     margin-top: 100px;
   }
+  
