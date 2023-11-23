@@ -4,6 +4,7 @@
   "/_document": "pages/_document.js",
   "/blog": "pages/blog.js",
   "/blogpost/[slug]": "pages/blogpost/[slug].js",
+  "/": "pages/index.js",
   "/api/getblog": "pages/api/getblog.js",
   "/api/blog": "pages/api/blog.js"
 }

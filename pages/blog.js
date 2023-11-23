@@ -2,19 +2,10 @@ import React, { useState, useEffect } from 'react'
 import styles from '../styles/blog.module.css'
 import Link from 'next/link'
 
-const blog = () => {
+const blog = (props) => {
 
-    const [blogs, setBlogs] = useState([]);
-    useEffect(() => {
-        console.log("useeffect is running");
-        fetch('http://localhost:3000/api/blog').then((a) => {
-            return a.json();
-        })
-        .then((parsed) => {
-            console.log(parsed)
-            setBlogs(parsed)
-        })
-        }, [])
+    const [blogs, setBlogs] = useState(props.data);
+    
     return (
         <div>
             {blogs.map((blogitem, index) => {
@@ -31,3 +22,9 @@ const blog = () => {
 }
 
 export default blog;
+
+export async function getServerSideProps() {
+    const res = await fetch('http://localhost:3000/api/blog')
+    const data = await res.json()
+    return { props: { data } }
+  }
